@@ -23,7 +23,7 @@ public:
 	void setDay(int d); // set day
 	void setYear(int y); // set year
 	// accessors
-	void showDate1(); // slash verision, e.g. 3/16/2016
+	void showDate1(); // slash verision, e.g. 3/16/16
 	void showDate2(); // long version, e.g. December 31, 2019
 	void showDate3(); // military version, e.g. 31 Dec 2019
 };
