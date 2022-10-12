@@ -12,7 +12,7 @@ Write a project with a class called "Date" that has integer data members to stor
 
 Use a prototype for this class at the beginning of the file that looks like this:
 
-          ![Ch 7 Dates class](https://github.com/bell-kevin/ch7printingDates/blob/main/saveMe1.PNG)
+   ![Ch 7 Dates class](https://github.com/bell-kevin/ch7printingDates/blob/main/saveMe1.PNG)
 
 Below that declaration, write the implementation for each member function. Write a default constructor with no parameters that sets the date to January 1, 2001. Write a 3-parameter constructor that sets the data members ( month, day, and year) when the Date object is created with parameters. Write setter methods to set each variable, where you will validate the input for the data members -- month should be numbers from 1 to 12, day should be numbers from 1 to the number of days in the selected month, and year should be numbers from 1900 to 2099. Assume that February always has 28 days. You will need to call those setter methods inside the constructor to get that validation to run. If the code creates a Date object with no parameters, missing parameters, or with invalid parameters, use default values of 1 for the day, 1 for the month, and 2001 for the year (Jan 1, 2001).
 
