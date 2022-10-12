@@ -6,7 +6,7 @@
 using namespace std;
 int main()
 {
-    cout << "Chapter 7 Printing Dates by Kevin Bell\n\n";
+	cout << "Chapter 7 Printing Dates by Kevin Bell\n\n";
 	cout << "Default date\n";
 	Date date1, date2(3, 16, 2016);
 	date1.showDate1();
