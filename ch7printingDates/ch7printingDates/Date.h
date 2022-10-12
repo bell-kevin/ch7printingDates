@@ -9,7 +9,7 @@ class Date
 private:
 	int month; // 1-12
 	int day; // 1-31 based on month
-	int year; // 4 digit year from 1900 to 2099
+	int year; // year from 1900 to 2099
 	string monthName; // name of month
 	string abbrevMonthName; // abbreviation of month
 	void setMonthName(); // private mutator sets month name
@@ -59,11 +59,25 @@ void Date::setMonth(int m)
 }
 void Date::setDay(int d)
 {
-	day = d;
+	if (d >= 1 && d <= 31) {
+		day = d;
+	}
+	else
+	{
+		day = 1;
+		cout << "Invalid day (" << d << ") set to 1.\n";
+	}
 }
 void Date::setYear(int y)
 {
-	year = y;
+	if (y >= 1900 && y <= 2099) {
+		year = y;
+	}
+	else
+	{
+		year = 2001;
+		cout << "Invalid year (" << y << ") set to 2001.\n";
+	}
 }
 // private mutator sets month name
 void Date::setMonthName()
