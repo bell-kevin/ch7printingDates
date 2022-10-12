@@ -1,7 +1,9 @@
 #pragma once
 #include <iostream>
+#include <iomanip>
 #include <string>
 using namespace std;
+
 class Date
 {
 private:
@@ -32,7 +34,8 @@ Date::Date()
 	month = 1;
 	day = 1;
 	year = 2001;
-	setMonthName();
+	monthName = "January";
+	abbrevMonthName = "Jan";
 }
 // constructor with month, day, year
 Date::Date(int m, int d, int y)
@@ -40,13 +43,14 @@ Date::Date(int m, int d, int y)
 	setMonth(m);
 	setDay(d);
 	setYear(y);
-	setMonthName();
 }
 // mutators
 void Date::setMonth(int m)
 {
-	if (m >= 1 && m <= 12)
+	if (m >= 1 && m <= 12) {
 		month = m;
+		setMonthName();
+	}
 	else
 	{
 		month = 1;
@@ -115,6 +119,7 @@ void Date::setMonthName()
 		abbrevMonthName = "Dec";
 		break;
 	}
+	
 }
 // accessors
 void Date::showDate1()
