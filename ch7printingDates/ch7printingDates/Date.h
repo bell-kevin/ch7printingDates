@@ -138,7 +138,9 @@ void Date::setMonthName()
 // accessors
 void Date::showDate1()
 {
-	cout << month << "/" << day << "/" << year << endl;
+	string yearString = to_string(year);
+	yearString = yearString.substr(yearString.length() - 2, yearString.length() - 1);
+	cout << month << "/" << day << "/" << yearString << endl;
 }
 void Date::showDate2()
 {
