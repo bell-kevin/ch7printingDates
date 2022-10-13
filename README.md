@@ -20,7 +20,7 @@ Test the program in 3 ways: create a default date (no parameters) and print it i
 
 All valid data from the user:
 
-Ch 7 Printing Dates
+![Ch 7 Printing Dates](https://github.com/bell-kevin/ch7printingDates/blob/main/dates.PNG)
 
 All invalid data from the user:
 
