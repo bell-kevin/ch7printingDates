@@ -24,7 +24,7 @@ All valid data from the user:
 
 All invalid data from the user:
 
-Ch 7 Dates bad
+![Ch 7 Dates bad](https://github.com/bell-kevin/ch7printingDates/blob/main/badDates.PNG)
 
 Run the program twice with valid input and take screenshots. Then test invalid data: (1) invalid day with valid month and year, (2) valid day, invalid month, valid year, (3) valid day and month, invalid year), and (4) all 3 values invalid. Take screenshots of each of those results.
 
